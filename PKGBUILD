@@ -1,15 +1,15 @@
 # Maintainer: Jonathan Liu <net147@gmail.com>
 pkgname=gradm
-pkgver=2.9
-_timestamp=201202232055
-pkgrel=2
+pkgver=2.9.1
+_timestamp=201207201554
+pkgrel=1
 pkgdesc="Administrative interface for the grsecurity Role Based Access Control system"
 arch=('i686' 'x86_64')
 url="http://grsecurity.net/"
 license=('GPL2')
 depends=('pam')
 source=("http://grsecurity.net/stable/${pkgname}-${pkgver}-${_timestamp}.tar.gz")
-md5sums=('3b8aa9a4595f165a35167c718ab9e60c')
+sha256sums=('59f94b4f9bfde19b8deddc86a3c8d5bad77a77ae2f80c7952519447814e10db3')
 
 build() {
   cd "${srcdir}/${pkgname}2"
