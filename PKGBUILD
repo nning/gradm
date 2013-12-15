@@ -2,6 +2,13 @@
 #   Jonathan Liu <net147@gmail.com>
 #   henning mueller <henning@orgizm.net>
 #   s1gma, Ahmad24, maxrp
+#
+# Find this package in the AUR:
+#   https://aur.archlinux.org/packages/gradm
+#
+# Please report bugs and feature requests on GitHub:
+#   https://github.com/nning/gradm
+#
 
 pkgname=gradm
 pkgver=3.0
