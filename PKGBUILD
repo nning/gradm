@@ -21,14 +21,12 @@ license=(GPL2)
 depends=(pam)
 source=(
   http://grsecurity.net/stable/$pkgname-$pkgver-$_timestamp.tar.gz
-  usr.patch
   learn_config
   policy
 )
 
 build() {
   cd "$srcdir/$pkgname"
-  patch -Np1 < ../usr.patch
   sed -i -e 's/^CFLAGS :=/CFLAGS +=/' -e 's:sbin:usr/bin:' Makefile
   make
 }
@@ -41,6 +39,5 @@ package() {
 }
 
 sha256sums=('aee2ac5afe05025be41877fe2daeb4e74cc67af7de4cc958d192ee3a514aced1'
-            '7342323d2da3724afe745506690a1a5b194f3f0e959811ca320d820bf74c9ffa'
             'ec8e824e8a29a67be76bf853814ee85e80c4063009e5693d5db8cdb45bd45813'
             '61c0e84098e8386e5496dafce559558adef32e2a4a1241a9fa3bd56eab192dcd')
